@@ -24,3 +24,12 @@ provider "aws" {
 }
 }
 
+resource "aws_s3_bucket" "bronze_layer" {
+  bucket = "${var.project_name}_bronze_675"
+
+  force_destroy = false
+
+  tags = {
+    
+  }
+}
